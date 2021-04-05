@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>ChazyStore</title>
 </head>
 <body>
+    
     <!-- Header -->
    <header class="header">
        <div class="container">
@@ -31,17 +34,17 @@
    <!-- produtos -->
    <section class="introducao">
         <div class="conteiner">
-            <h1 class="venda">Camisas de time</h1>
-            <blockquote class="quote-externo">
+            <h1 data-anime="400"class="venda fadeInDown">Camisas de time</h1>
+            <blockquote data-anime="700" class="fadeInDown quote-externo">
                 <p>
                     "Tenha sempre com você seu time do coração"
                 </p>
                 <cite>THIAGO MINGUIM</cite>
             </blockquote>
-            <a href="produtos.html" class="btn">Orçamento</a>
+            <a data-anime="1000" href="produtos.html" class="fadeInUp btn">Orçamento</a>
         </div>
    </section>
-   <section class="produtos container">
+   <section data-anime="1200" class="produtos container fadeInDown" >
        <h2 class="subtitulo">Produtos</h2>
        <ul class="produtos_lista">
            <li class="grid-1-3">
@@ -159,6 +162,8 @@
             </div>
         </div>
     </footer>
-  
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

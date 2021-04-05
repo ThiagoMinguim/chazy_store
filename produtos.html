@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produtos.css">
-    
-    
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>ChazyStore - Produtos</title>
 </head>
 <body>
@@ -34,12 +34,12 @@
    <!-- Intro -->
    <section class="introducao-interna interna_sobre">
         <div class="conteiner">
-            <h1 class="venda">Produtos</h1>
-            <p>Conheça todos os nossos produtos</p>
+            <h1 data-anime="400" class="fadeInDown venda">Produtos</h1>
+            <p data-anime="700" class="fadeInDown">Conheça todos os nossos produtos</p>
         </div>
    </section>
 <!-- Produtos -->
-<section class="container produto_item">
+<section data-anime="1000" class="fadeInDown container produto_item" >
     <div class="grid-11"><img src="img/produtos/chazystore-passeio-1.png" alt="chazystore passeio">
         <h2>Passeio</h2>
     </div>
@@ -168,6 +168,8 @@
             </div>
         </div>
     </footer>
-  
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
-    
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>ChazyStore - Sobre</title>
 </head>
 <body>
@@ -33,13 +34,13 @@
    <!-- produtos -->
    <section class="introducao-interna interna_sobre">
         <div class="conteiner">
-            <h1 class="venda">Sobre</h1>
-            <p>conheça mais sobre a chazy store</p>
+            <h1 data-anime="400" class="venda fadeInDown">Sobre</h1>
+            <p data-anime="700" class="fadeInDown">conheça mais sobre a chazy store</p>
         </div>
    </section>
 
    <!-- missao, visao, valores -->
-   <section class="missao_sobre container">
+   <section data-anime="1000" class="fadeInDown missao_sobre container">
     <div class="grid-10">
         <h2 class="subtitulo-interno">História, Missão e Visão</h2>
         <p>Site feito para estudos, e aprimoramento de habilidades em html, css e JavaScript.</p>
@@ -124,6 +125,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
   
 </body>
 </html>
