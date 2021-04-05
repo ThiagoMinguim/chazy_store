@@ -40,7 +40,7 @@ img {
   text-align: center;
   margin-bottom: 40px;
 }
-.subtitulo::after {
+.subtitulo:after {
   content: "";
   display: block;
   width: 60px;
@@ -49,12 +49,30 @@ img {
   margin: 10px auto;
 }
 
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subtitulo-interno:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  margin: 10px 0;
+}
+
 /* Header */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #30cc14; /*Verde*/
+  background: #30cc14 ; /*Verde*/
   padding: 15px 0;
   opacity: 0.8;
   z-index: 1;
@@ -77,6 +95,9 @@ img {
   padding: 10px 0;
 }
 .header_menu ul li a:hover {
+  color: #fff;
+}
+.header_menu ul li a.menu_ativo {
   color: #fff;
 }
 
@@ -124,6 +145,30 @@ img {
   font-size: 14px;
   letter-spacing: 0.3em;
 }
+/* INTRODUÇÃO INTERNA */
+
+.introducao-interna {
+  width: 100%;
+  height: 300px;
+  padding-top: 130px;
+  text-align: center;
+  color: white;
+}
+.introducao-interna h1 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.introducao-interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 6px auto 10px auto;
+}
+
 /* produtos */
 .produtos {
   padding: 60px 0;
@@ -214,6 +259,12 @@ img {
 .qualidade img {
   margin: 0 auto;
 }
+
+.qualidade_lista {
+  padding-top: 20px;
+  overflow: hidden;
+}
+
 .qualidade_lista li {
   text-align: center;
   padding: 0 40px;
@@ -249,7 +300,7 @@ img {
 /* footer */
 .footer {
   width: 100%;
-  background:black;
+  background: black;
   color: white;
   padding: 10px 0;
 }
@@ -271,13 +322,11 @@ img {
 }
 .footer_historia {
   margin-left: 10px;
-
 }
 .footer_historia p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 20px;
- 
 }
 .footer_contato ul li {
   font-size: 14px;
@@ -285,20 +334,20 @@ img {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding-right: 20px;
 }
-.footer_redes ul li{
+.footer_redes ul li {
   display: inline-block;
   margin-right: 10px;
 }
-.footer_redes ul li a{
+.footer_redes ul li a {
   border: 3px solid #30cc14;
   display: block;
-  padding:10px;
+  padding: 10px;
 }
-.footer_redes ul li a:hover{
+.footer_redes ul li a:hover {
   border-color: #fff;
 }
-.copy{
+.copy {
   width: 100%;
-  background:#30cc14 ;
-  padding: 20px 0 ;
+  background: #30cc14;
+  padding: 20px 0;
 }
