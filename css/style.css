@@ -73,7 +73,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  background: red; /*Verde*/
+  background: #30cc14; /*Verde*/
   padding: 15px 0;
   opacity: 0.8;
   z-index: 1;
