@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <script>document.documentElement.classList.add("js");</script>
+    
     <title>ChazyStore - Portfólio</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
            </a>
            <nav class="header_menu" class="grid-12">
                <ul>
-                   <li><a href="sobre.html">Sobre</a></li>
+                   <li><a href="sobre.html" class="menu_ativo">Sobre</a></li>
                    <li><a href="produtos.html">Produtos</a></li>
                    <li><a href="portfolio.html" class="menu_ativo" >Portfólio</a></li>
                    <li><a href="contato.html">Contato</a></li>
@@ -34,35 +33,22 @@
    <!-- produtos -->
    <section class="introducao-interna interna_portfolio">
         <div class="conteiner">
-            <h1 data-anime="400" class="fadeInDown venda">Portfolio</h1>
-            <p data-anime="700" class="fadeInDown">Conheça as camisas</p>
+            <h1 class="venda">Portfolio</h1>
+            <p>Conheça as camisas</p>
         </div>
    </section>
-   <section data-anime="1000" class="fadeInDown container" data-slide="quote">
+   <section class="container">
        <blockquote class="quote_cliente">
            <p>Camisas de times varios modelos e varios tamanhos, para todos os gostos !</p>
            <cite>Thiago Minguim</cite>
        </blockquote>
-       <blockquote class="quote_cliente">
-        <p>socrro</p>
-        <cite>Thiago Minguim</cite>
-    </blockquote>
-    <blockquote class="quote_cliente">
-        <p>Morango é vermelho</p>
-        <cite>Thiago Minguim</cite>
-    </blockquote>
    </section>
 
    <section class="portfolio">
-    <div class="container" data-slide="portfolio">
+    <div class=container>
         <ul class="portfolio_lista">
             <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="liverpool"></li>
             <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="liverpool"></li>
-            <li class="grid-16 ter"><img src="img/portfolio/esporte.jpg" alt="liverpool"></li>
-        </ul>
-        <ul class="portfolio_lista">
-            <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="liverpool"></li>
-            <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="liverpool"></li>
             <li class="grid-16 ter"><img src="img/portfolio/esporte.jpg" alt="liverpool"></li>
         </ul>
     </div>
@@ -116,9 +102,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/simple-anime.js"></script>
-    <script src="js/simple-slide.js"></script>
-    <script src="js/script.js"></script>
-</body>
+  
 </body>
 </html>
