@@ -10,6 +10,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .btn {
   border: 5px solid #30cc14;
@@ -177,6 +178,9 @@ img {
   background: #000000;
   height: 400px;
   text-align: center;
+}
+.produtos_lista li img {
+  margin: 0 auto;
 }
 .produtos_lista li h3 {
   color: white;
@@ -350,4 +354,60 @@ img {
   width: 100%;
   background: #30cc14;
   padding: 20px 0;
+}
+/* JavaScript */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  /* z-index: 1; */
+}
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+[data-slide-nav] button.active {
+  background: #30cc14;
+}
+.js [data-anime] {
+  opacity: 0;
+}
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
 }

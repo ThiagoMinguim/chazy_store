@@ -1,80 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <title>ChazyStore</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
-   <header class="header">
-       <div class="container">
-           <a href="index.html" class="grid-4">
-               <img src="img/logo chazy2.svg" alt="Logo marca">
-           </a>
-           <nav class="header_menu" class="grid-12">
-               <ul>
-                   <li><a href="sobre.html">Sobre</a></li>
-                   <li><a href="produtos.html">Produtos</a></li>
-                   <li><a href="portfolio.html">Portfólio</a></li>
-                   <li><a href="contato.html">Contato</a></li>
-               </ul>
-           </nav>
-       </div>
-   </header>
-   <!-- produtos -->
-   <section class="introducao">
-        <div class="conteiner">
-            <h1 class="venda">Camisas de time</h1>
-            <blockquote class="quote-externo">
-                <p>
-                    "Tenha sempre com você seu time do coração"
-                </p>
-                <cite>THIAGO MINGUIM</cite>
-            </blockquote>
-            <a href="produtos.html" class="btn">Orçamento</a>
-        </div>
-   </section>
-   <section class="produtos container">
-       <h2 class="subtitulo">Produtos</h2>
-       <ul class="produtos_lista">
-           <li class="grid-1-3">
-               <div class="produtos_icone">
-               <img src="img/produtos/camisa.svg" alt="logo camisa">
-               </div>
-               <h3>Jogador</h3>
-               <p>O tecido utilizado nas camisas dos jogadores possui uma tecnologia mais requintada, que absorve o suor de maneira mais eficiente e mais rápidar</p>
-            </li>
-            
-            <li class="grid-1-3">
-                <div class="produtos_icone">
-                <img src="img/produtos/camisa.svg" alt="logo camisa">
-                </div>
-                <h3>fan</h3>
-                <p> Já as camisas de modelo Supporter (ou torcedor) são feitas com um grau menor de detalhes. Elas também não possuem todas as tecnologias do tecido de uma camisa Authentic.</p>
-             </li>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="grid-4">
+          <img src="img/logo chazy2.svg" alt="Logo marca" />
+        </a>
+        <nav class="header_menu grid-12">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- produtos -->
+    <section class="introducao">
+      <div class="conteiner">
+        <h1 data-anime="400" class="venda fadeInDown">Camisas de time</h1>
+        <blockquote data-anime="700" class="fadeInDown quote-externo">
+          <p>"Tenha sempre com você seu time do coração"</p>
+          <cite>THIAGO MINGUIM</cite>
+        </blockquote>
+        <a data-anime="1000" href="produtos.html" class="fadeInUp btn"
+          >Orçamento</a
+        >
+      </div>
+    </section>
+    <section data-anime="1200" class="produtos container fadeInDown">
+      <h2 class="subtitulo">Produtos</h2>
+      <ul class="produtos_lista">
+        <li class="grid-1-3">
+          <div class="produtos_icone">
+            <img src="img/produtos/camisa.svg" alt="logo camisa" />
+          </div>
+          <h3>Jogador</h3>
+          <p>
+            O tecido utilizado nas camisas dos jogadores possui uma tecnologia
+            mais requintada, que absorve o suar de maneira mais eficiente e mais
+            rápidar
+          </p>
+        </li>
 
-             <li class="grid-1-3">
-                <div class="produtos_icone">
-                <img src="img/produtos/camisa.svg" alt="logo camisa">
-                </div>
-                <h3>Retro</h3>
-                <p>São os uniformes antigos, do seu clube.Que voltaram a moda na forma 'retro'</p>
-             </li>
-       </ul>
-       <div class="call">
-           <p>Clique aqui e veja os detalhes dos produtos</p>
-           <a href="produtos.html" class="btn btn-preto">Produtos</a>
-       </div>
-   </section>
+        <li class="grid-1-3">
+          <div class="produtos_icone">
+            <img src="img/produtos/camisa.svg" alt="logo camisa" />
+          </div>
+          <h3>fan</h3>
+          <p>
+            Já as camisas de modelo Supporter (ou torcedor) são feitas com um
+            grau menor de detalhes. Elas também não possuem todas as tecnologias
+            do tecido de uma camisa Authentic.
+          </p>
+        </li>
+
+        <li class="grid-1-3">
+          <div class="produtos_icone">
+            <img src="img/produtos/camisa.svg" alt="logo camisa" />
+          </div>
+          <h3>Retro</h3>
+          <p>
+            São os uniformes antigos, do seu clube.Que voltaram a moda na forma
+            'retro'
+          </p>
+        </li>
+      </ul>
+      <div class="call">
+        <p>Clique aqui e veja os detalhes dos produtos</p>
+        <a href="produtos.html" class="btn btn-preto">Produtos</a>
+      </div>
+    </section>
     <!-- portfolio -->
     <section class="portfolio">
+<<<<<<< HEAD
         <div class=container>
             <h2 class="subtitulo">Portfolio</h2>
             <ul class="portfolio_lista">
@@ -106,59 +122,103 @@
                 <h3>Sustentabilidade</h3>
                 <p>Camisas de primeira linha, com ótima durabilidade.</p>
             </li>
+=======
+      <div class="container">
+        <h2 class="subtitulo">Portfolio</h2>
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="img/portfolio/retro.jpg" alt="liverpool" />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/passeio.jpg" alt="liverpool" />
+          </li>
+          <li class="grid-16 ter">
+            <img src="img/portfolio/esporte.jpg" alt="liverpool" />
+          </li>
+>>>>>>> Site-completo
         </ul>
         <div class="call">
-            <p>Conheça mais a nossa história</p>
-            <a href="sobre.html" class="btn btn-preto">Sobre</a>
+          <p>Conheça mais o nosso porfólio</p>
+          <a href="portfolio.html" class="btn">Portfólio</a>
         </div>
+      </div>
     </section>
+    <!-- qualidade -->
+    <section class="qualidade container">
+      <h2 class="subtitulo">Qualidade</h2>
+      <img src="img/qualidade.chazy.svg" alt="chazystore" />
+      <ul class="qualidade_lista">
+        <li class="grid-1-3">
+          <h3>Durabilidade</h3>
+          <p>Camisas de primeira linha, com ótima durabilidade.</p>
+        </li>
+        <li class="grid-1-3">
+          <h3>Design</h3>
+          <p>O melhor design disponivel no mercado.</p>
+        </li>
+        <li class="grid-1-3">
+          <h3>Sustentabilidade</h3>
+          <p>Camisas de primeira linha, com ótima durabilidade.</p>
+        </li>
+      </ul>
+      <div class="call">
+        <p>Conheça mais a nossa história</p>
+        <a href="sobre.html" class="btn btn-preto">Sobre</a>
+      </div>
+      </section>
     <section class="quebra">
-        <blockquote class="quote-externo container">
-            <p>
-                "Boas memórias começam com o que se veste!"
-            </p>
-            <cite>THIAGO MINGUIM</cite>
-        </blockquote>
+      <blockquote class="quote-externo container">
+        <p>"Boas memórias começam com o que se veste!"</p>
+        <cite>THIAGO MINGUIM</cite>
+      </blockquote>
     </section>
     <footer>
-        <div class="footer">
+      <div class="footer">
         <div class="container">
+          <div class="grid-1-3 footer_historia">
+            <h3>Nossa história</h3>
+            <p>Site desenvolvido para estudos e um futuro empreendimento.</p>
+          </div>
 
-            <div class="grid-1-3 footer_historia">
-                <h3>
-                    Nossa história
-                </h3>
-                <p>
-                    Site desenvolvido para estudos e um futuro empreendimento.
-                </p>
-            </div>
-
-            <div class="grid-1-3 footer_contato">
-                <h3>
-                    Contato
-                </h3>
-                <ul>
-                    <li>- 34 9 84197182</li>
-                    <li>- thiago.minguim@gmail.com</li>
-                    <li>- Uberaba - MG</li>
-                </ul>
-            </div>
-            <div class="grid-1-3 footer_redes">
-                <h3>Contato</h3>
-                <ul>
-                    <li><a href="" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
-                    <li><a href="" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram"></a></li>
-                    <li><a href="" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter"></a></li>
-                </ul>
-            </div>
+          <div class="grid-1-3 footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>- 34 9 84197182</li>
+              <li>- thiago.minguim@gmail.com</li>
+              <li>- Uberaba - MG</li>
+            </ul>
+          </div>
+          <div class="grid-1-3 footer_redes">
+            <h3>Contato</h3>
+            <ul>
+              <li>
+                <a href="" target="_blank"
+                  ><img src="img/redes-sociais/facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"
+                  ><img src="img/redes-sociais/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="" target="_blank"
+                  ><img src="img/redes-sociais/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">ChazyStore 2021 - Alguns direitos reservados.</p>
         </div>
-        <div class="copy">
-            <div class="container">
-                <p class="grid-16">ChazyStore 2021 -  Alguns direitos reservados.</p>
-            </div>
-        </div>
+      </div>
     </footer>
-  
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
+  </body>
 </html>
